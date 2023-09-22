@@ -41,7 +41,7 @@ export default function DBCard() {
         </Typography>
         <img src="https://placehold.co/600x400" alt="Cool Stuff" width="100%"/>
         <Typography variant="body2" component="p">
-          Dungeon Bakery is a 2-D minigame/dungeon-crawler built in Unity. You play as a bakery owner who must collect ingredients from the perilous dungeon below.
+          Dungeon Bakery is a 2D minigame/dungeon-crawler built in Unity. You play as a bakery owner who must collect ingredients from the perilous dungeon below.
         </Typography>
       </CardContent>
       <CardActions>

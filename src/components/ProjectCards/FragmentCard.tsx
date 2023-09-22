@@ -41,7 +41,7 @@ export default function FragmentCard() {
         </Typography>
         <img src="https://placehold.co/600x400" alt="Cool Stuff" width="100%" />
         <Typography variant="body2">
-            <p>Fragment is a 3-D, top-down, rogue-lite video game created in Unity. You play as a spirit tasked with stopping the corruption.</p>
+            <p>Fragment is a 3D, top-down, rogue-lite video game created in Unity. You play as a spirit tasked with stopping the corruption.</p>
         </Typography>
       </CardContent>
       <CardActions>

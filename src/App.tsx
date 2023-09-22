@@ -44,7 +44,7 @@ function App() {
         </Grid>
       </body>
       <footer className="App-footer">
-        <h1>Website made in React and Material UI V4</h1>
+        <h5>Website made in React and Material UI V4</h5>
       </footer>
     </div>
   );
