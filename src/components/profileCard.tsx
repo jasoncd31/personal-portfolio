@@ -29,6 +29,10 @@ function handleClick(url: string): void {
   window.open(url, '_blank');
 }
 
+function emailClick(): void {
+  window.open("mailto:jasoncd31@gmail.com", '_blank');
+}
+
 export default function ProfileCard() {
   const classes = useStyles();
 
@@ -46,7 +50,7 @@ export default function ProfileCard() {
             <Grid item xs={6}>
                 <Typography variant="body1">
                     <p>Hi! My name is Jason Douglas. I am a passionate game developer.</p>
-                    <p>Creating games has been a dream of mine since I was a child. If I am not working on a game, I am probably playing one. </p>
+                    {/* <p>Creating games has been a dream of mine since I was a child. If I am not working on a game, I am probably playing one. </p> */}
                     <p>Based in Culver City, CA, I am currently a Graduate Student at Loyola Marymount University where I also received my Bachelor's Degree in Computer Science. </p>
                 </Typography>
             </Grid>
@@ -59,7 +63,7 @@ export default function ProfileCard() {
                     <Grid item xs>
                         <Button onClick={() => { handleClick("https://www.github.com/jasoncd31") }} color='primary' size="small" >Github</Button>
                         <Button onClick={() => { handleClick("https://www.linkedin.com/in/jasoncd31") }} color='primary' size="small">LinkedIn</Button>
-                        <Button onClick={() => { handleClick("https://www.github.com/jasoncd31") }} color='primary' size="small">Contact Me</Button>
+                        <Button onClick={() => { emailClick() }} color='primary' size="small">Contact Me</Button>
                     </Grid>
                 </Grid>
             </Grid>
