@@ -16,33 +16,39 @@ function App() {
         <ProfileCard />
       </header>
       <body className='App-projects'>
-        <h1>Projects</h1>
-        <Grid container spacing = {3} direction='column' justifyContent='space-between' alignContent='center'>
-          <Grid item xs = {6}>
+        <h1>Gaming Projects</h1>
+        <Grid container spacing = {3} direction='row' justifyContent='space-between' alignContent='center'>
+          <Grid item xs>
             <FragmentCard />
           </Grid>
-          <Grid item xs = {6}>
+          <Grid item xs>
             <DBCard />
           </Grid>
-          <Grid item xs = {6}>
+          <Grid item xs>
             <FFCard />
           </Grid>
-          <Grid item xs = {6}>
+          <Grid item xs>
             <RamenhoodCard />
           </Grid>
         </Grid>
       </body>
       <body className='App-skills'>
         <h1>Skills</h1>
-        <Grid container spacing = {2} direction='column' justifyContent='space-between' alignContent='center'>
-          <Grid item xs = {6}>
+        <Grid container spacing = {3} direction='column' justifyContent='space-between' alignContent='center'>
+          <Grid item xs>
             <SkillCard />
           </Grid>
-          <Grid item xs = {6}>
+          <Grid item xs>
             <EngineCard />
           </Grid>
         </Grid>
       </body>
+      <body className='App-projects'>
+        <h1>Non-Gaming Projects</h1>
+      </body>
+      <body className='App-skills'>
+        <h1>About Me</h1>
+      </body> 
       <footer className="App-footer">
         <h5>Website made in React and Material UI V4</h5>
       </footer>

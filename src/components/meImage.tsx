@@ -9,8 +9,8 @@ const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
       '& > *': {
         margin: theme.spacing(1),
-        width: theme.spacing(15),
-        height: theme.spacing(15),
+        width: theme.spacing(20),
+        height: theme.spacing(20),
       },
     },
   }),

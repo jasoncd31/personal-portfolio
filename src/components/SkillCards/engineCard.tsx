@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   root: {
     minWidth: 275,
     maxWidth: 500,
-    backgroundColor: 'lightgrey',
+    backgroundColor: 'whitesmoke',
   },
   bullet: {
     display: 'inline-block',
@@ -34,6 +34,7 @@ export default function EngineCard() {
         <Typography variant='h4'>
           Frameworks & Engines
         </Typography>
+        <br />
         <Grid container spacing={3} justifyContent='center'>
           <List>
             <Typography variant="body2" component="p">

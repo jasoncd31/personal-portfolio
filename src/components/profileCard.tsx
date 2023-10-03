@@ -49,9 +49,10 @@ export default function ProfileCard() {
         <Grid container spacing={3}>
             <Grid item xs={6}>
                 <Typography variant="body1">
-                    <p>Hi! My name is Jason Douglas. I am a passionate game developer.</p>
+                    Hi! My name is Jason Douglas. I am a passionate game developer.
+                    <br />
                     {/* <p>Creating games has been a dream of mine since I was a child. If I am not working on a game, I am probably playing one. </p> */}
-                    <p>Based in Culver City, CA, I am currently a Graduate Student at Loyola Marymount University where I also received my Bachelor's Degree in Computer Science. </p>
+                    Based in Culver City, CA, I am currently a Graduate Student at Loyola Marymount University where I also received my Bachelor's Degree in Computer Science.
                 </Typography>
             </Grid>
             <Grid item xs={6}>
