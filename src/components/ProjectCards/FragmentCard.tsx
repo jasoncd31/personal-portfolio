@@ -40,8 +40,8 @@ export default function FragmentCard() {
           Senior Project 2023
         </Typography>
         <img src="https://placehold.co/600x400" alt="Cool Stuff" width="100%" />
-        <Typography variant="body2">
-            <p>Fragment is a 3D, top-down, rogue-lite video game created in Unity. You play as a spirit tasked with stopping the corruption.</p>
+        <Typography variant="body2" component="p">
+            Fragment is a 3D, top-down, rogue-lite video game created in Unity. You play as a spirit tasked with stopping the corruption.
         </Typography>
       </CardContent>
       <CardActions>

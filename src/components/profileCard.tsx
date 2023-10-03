@@ -50,8 +50,9 @@ export default function ProfileCard() {
             <Grid item xs={6}>
                 <Typography variant="body1">
                     Hi! My name is Jason Douglas. I am a passionate game developer.
-                    <br />
-                    {/* <p>Creating games has been a dream of mine since I was a child. If I am not working on a game, I am probably playing one. </p> */}
+                </Typography>
+                <br />
+                <Typography variant="body1">
                     Based in Culver City, CA, I am currently a Graduate Student at Loyola Marymount University where I also received my Bachelor's Degree in Computer Science.
                 </Typography>
             </Grid>
