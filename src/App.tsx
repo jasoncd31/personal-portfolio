@@ -8,6 +8,7 @@ import DBCard from './components/ProjectCards/DBCard';
 import EngineCard from './components/SkillCards/engineCard';
 import FFCard from './components/ProjectCards/FFCard';
 import RamenhoodCard from './components/ProjectCards/RamenhoodCard';
+import PiratesCodeCard from './components/ProjectCards/PiratesCodeCard';
 
 function App() {
   return (
@@ -45,10 +46,15 @@ function App() {
       </body>
       <body className='App-projects'>
         <h1>Non-Gaming Projects</h1>
+        <Grid container spacing = {3} direction='column' justifyContent='space-between' alignContent='center'>
+          <Grid item xs>
+            <PiratesCodeCard />
+          </Grid>
+        </Grid>
       </body>
-      <body className='App-skills'>
+      {/* <body className='App-skills'>
         <h1>About Me</h1>
-      </body> 
+      </body>  */}
       <footer className="App-footer">
         <h5>Website made in React and Material UI V4</h5>
       </footer>
