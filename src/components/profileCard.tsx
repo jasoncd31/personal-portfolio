@@ -65,7 +65,7 @@ export default function ProfileCard() {
                     <Grid item xs>
                         <Button onClick={() => { handleClick("https://www.github.com/jasoncd31") }} color='primary' size="small" >Github</Button>
                         <Button onClick={() => { handleClick("https://www.linkedin.com/in/jasoncd31") }} color='primary' size="small">LinkedIn</Button>
-                        <Button onClick={() => { emailClick() }} color='primary' size="small">Contact Me</Button>
+                        <Button onClick={() => { emailClick() }} color='primary' size="small">Email Me</Button>
                     </Grid>
                 </Grid>
             </Grid>
