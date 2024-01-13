@@ -46,7 +46,7 @@ export default function FFCard() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button onClick={() => { handleClick("https://www.github.com/jasoncd31/Fragment-Game") }} color='primary' size="small" >Github Repository</Button>
+        <Button onClick={() => { handleClick("https://www.github.com/jasoncd31/Freeway-Farmers") }} color='primary' size="small" >Github Repository</Button>
       </CardActions>
     </Card>
   );
