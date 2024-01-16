@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Fragment_Image from '../../images/FG1.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -39,7 +40,7 @@ export default function FragmentCard() {
         <Typography variant="h5" color="textSecondary">
           Senior Project 2023
         </Typography>
-        <img src="https://placehold.co/600x400" alt="Cool Stuff" width="100%" />
+        <img src={Fragment_Image} alt="Cool Stuff" width="100%" />
         <Typography variant="body2" component="p">
             Fragment is a 3D, top-down, rogue-lite video game created in Unity. You play as a spirit tasked with stopping the corruption.
         </Typography>
