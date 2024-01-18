@@ -9,7 +9,8 @@ import Fragment_Image from '../../images/FG1.jpg';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    maxWidth: 4000,
+    maxHeight: 825,
   },
   bullet: {
     display: 'inline-block',

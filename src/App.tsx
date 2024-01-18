@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
 import SkillCard from './components/SkillCards/skillCard';
 import ProfileCard from './components/profileCard';
@@ -23,20 +25,22 @@ function App() {
       </header>
       <body className='App-projects'>
         <h1>Gaming Projects</h1>
-        <Grid container spacing = {3} direction='row' justifyContent='space-between' alignContent='center'>
-          <Grid item xs>
-            <FragmentCard />
+        <div className='padding'>
+          <Grid container spacing = {3} direction='row' justifyContent='space-between' alignContent='center'>
+            <Grid item xs>
+              <FragmentCard />
+            </Grid>
+            <Grid item xs>
+              <DBCard />
+            </Grid>
+            <Grid item xs>
+              <FFCard />
+            </Grid>
+            {/* <Grid item xs>
+              <RamenhoodCard />
+            </Grid> */}
           </Grid>
-          <Grid item xs>
-            <DBCard />
-          </Grid>
-          <Grid item xs>
-            <FFCard />
-          </Grid>
-          {/* <Grid item xs>
-            <RamenhoodCard />
-          </Grid> */}
-        </Grid>
+        </div>
       </body>
       <body className='App-skills'>
         <h1>Skills</h1>
@@ -48,6 +52,9 @@ function App() {
             <EngineCard />
           </Grid>
         </Grid>
+      </body>
+      <body className='App-projects'>
+        <h1>Gaming Advisement Projects</h1>
       </body>
       <body className='App-projects'>
         <h1>Non-Gaming Projects</h1>
