@@ -12,6 +12,7 @@ import FFCard from './components/ProjectCards/FFCard';
 import RamenhoodCard from './components/ProjectCards/RamenhoodCard';
 import PiratesCodeCard from './components/ProjectCards/PiratesCodeCard';
 import Button from '@material-ui/core/Button';
+import EscapeKeckCard from './components/ProjectCards/AdvisementCards/EscapeKeckCard';
 
 function handleClick(url: string): void {
   window.open(url, '_blank');
@@ -55,6 +56,13 @@ function App() {
       </body>
       <body className='App-projects'>
         <h1>Gaming Advisement Projects</h1>
+        <div className='padding'>
+          <Grid container spacing = {3} direction='row' justifyContent='space-between' alignContent='center'>
+            <Grid item xs>
+              <EscapeKeckCard />
+            </Grid>
+          </Grid>
+        </div>
       </body>
       <body className='App-projects'>
         <h1>Non-Gaming Projects</h1>
@@ -64,9 +72,6 @@ function App() {
           </Grid>
         </Grid>
       </body>
-      {/* <body className='App-skills'>
-        <h1>About Me</h1>
-      </body>  */}
       <footer className="App-footer">
         <h5>
           Website made in React and Material UI V4 

@@ -5,7 +5,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import DB_front from '../../images/DB1_front.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -29,21 +28,18 @@ function handleClick(url: string): void {
   window.open(url, '_blank');
 }
 
-export default function DBCard() {
+export default function DualitaireCard() {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <CardContent>
         <Typography variant='h2'>
-          Dungeon Bakery
+          Escape Keck
         </Typography>
-        <Typography variant="h5" color="textSecondary">
-          Game Development Final
-        </Typography>
-        <img src={DB_front} alt="Cool Stuff" width="100%"/>
+        <img src="https://placehold.co/600x400" alt="Cool Stuff" width="100%"/>
         <Typography variant="body2" component="p">
-          Dungeon Bakery is a 2D minigame/dungeon-crawler built in Unity. You play as a bakery owner who must collect ingredients from the perilous dungeon below.
+          Escape Keck is a psychological horror game built in Unreal Engine. You play as a student who must escape the Keck Lab.
         </Typography>
       </CardContent>
       <CardActions>
