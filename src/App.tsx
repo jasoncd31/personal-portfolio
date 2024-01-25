@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
 import SkillCard from './components/SkillCards/skillCard';
 import ProfileCard from './components/profileCard';
@@ -9,10 +7,10 @@ import FragmentCard from './components/ProjectCards/FragmentCard';
 import DBCard from './components/ProjectCards/DBCard';
 import EngineCard from './components/SkillCards/engineCard';
 import FFCard from './components/ProjectCards/FFCard';
-import RamenhoodCard from './components/ProjectCards/RamenhoodCard';
-import PiratesCodeCard from './components/ProjectCards/PiratesCodeCard';
+import PiratesCodeCard from './components/ProjectCards/NonGamingCards/PiratesCodeCard';
 import Button from '@material-ui/core/Button';
 import EscapeKeckCard from './components/ProjectCards/AdvisementCards/EscapeKeckCard';
+import LMUHacksCard from './components/ProjectCards/NonGamingCards/LMUHacksCard';
 
 function handleClick(url: string): void {
   window.open(url, '_blank');
@@ -66,11 +64,16 @@ function App() {
       </body>
       <body className='App-projects'>
         <h1>Non-Gaming Projects</h1>
-        <Grid container spacing = {3} direction='column' justifyContent='space-between' alignContent='center'>
+        <div className='padding'>
+        <Grid container spacing = {3} direction='row' justifyContent='space-between' alignContent='center'>
           <Grid item xs>
             <PiratesCodeCard />
           </Grid>
+          <Grid item xs>
+            <LMUHacksCard />
+          </Grid>
         </Grid>
+        </div>
       </body>
       <footer className="App-footer">
         <h5>
