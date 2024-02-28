@@ -11,6 +11,7 @@ import PiratesCodeCard from './components/ProjectCards/NonGamingCards/PiratesCod
 import Button from '@material-ui/core/Button';
 import EscapeKeckCard from './components/ProjectCards/AdvisementCards/EscapeKeckCard';
 import LMUHacksCard from './components/ProjectCards/NonGamingCards/LMUHacksCard';
+import InventorsCard from './components/ProjectCards/InventorsCard';
 
 function handleClick(url: string): void {
   window.open(url, '_blank');
@@ -35,9 +36,9 @@ function App() {
             <Grid item xs>
               <FFCard />
             </Grid>
-            {/* <Grid item xs>
-              <RamenhoodCard />
-            </Grid> */}
+            <Grid item xs>
+              <InventorsCard />
+            </Grid>
           </Grid>
         </div>
       </body>
