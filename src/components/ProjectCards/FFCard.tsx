@@ -35,10 +35,10 @@ export default function FFCard() {
   return (
     <Card className={classes.root}>
       <CardContent>
-        <Typography variant='h2'>
+        <Typography variant='h3'>
           Freeway Farmers
         </Typography>
-        <Typography variant="h5" color="textSecondary">
+        <Typography variant="h6" color="textSecondary">
           Adv. Interactive Animation Final 2022
         </Typography>
         <img src={FF_front} alt="Cool Stuff" width="100%" />

@@ -37,6 +37,7 @@ export default function FragmentCard() {
       <CardContent>
         <Typography variant='h2'>
           Fragment
+          
         </Typography>
         <Typography variant="h5" color="textSecondary">
           Senior Project 2023

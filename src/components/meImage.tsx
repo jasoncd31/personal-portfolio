@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Me from '../images/me.jpg';
+var sides = 30;
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -9,8 +10,8 @@ const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
       '& > *': {
         margin: theme.spacing(1),
-        width: theme.spacing(20),
-        height: theme.spacing(20),
+        width: theme.spacing(sides),
+        height: theme.spacing(sides),
       },
     },
   }),

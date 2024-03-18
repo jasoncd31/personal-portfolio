@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Tip from '../../images/tip.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -34,13 +35,13 @@ export default function FragmentCard() {
   return (
     <Card className={classes.root}>
       <CardContent>
-        <Typography variant='h2'>
+        <Typography variant='h3'>
           The Inventors Project
         </Typography>
         <Typography variant="h5" color="textSecondary">
           Graduate Capstone 2024
         </Typography>
-        <img src="https://placehold.co/600x400" alt="Cool Stuff" width="100%" />
+        <img src={Tip} alt="Cool Stuff" width="100%" />
         <Typography variant="body2" component="p">
             The Inventors Project is a 3D Platformer set in a space out of time. The game is build in Godot 4.2 and is currently in development.
         </Typography>

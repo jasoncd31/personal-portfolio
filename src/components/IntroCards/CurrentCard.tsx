@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
-import MeImage from './meImage';
+import Tip from '../../images/tip.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -40,30 +40,26 @@ export default function ProfileCard() {
     <Card className={classes.root}>
       <CardContent>
         <Typography variant='h2'>
-          Jason Douglas
+          Current Project
         </Typography>
         <Typography variant="h5" color="textSecondary">
-          Game Developer and Designer
+          The Inventors Project
         </Typography>
         <br />
         <Grid container spacing={3}>
             <Grid item xs={6}>
-                <Typography variant="body1">
-                    Welcome to my webpage! My name is Jason Douglas. I am a passionate game designer/developer.
-                </Typography>
-                <br />
-                <Typography variant="body1">
-                    Below you can find all sorts of projects and events I've worked on as well as skills and software I've learned from them.
-                    Feel free to reach out to me if you have any questions or want to collaborate on a project!
+                <Typography variant="body1" align='left'>
+                  <ul>
+                    <li>Graduate Capstone 2024</li>
+                    <li>3D Platformer</li>
+                    <li>Godot 4.2</li>
+                    <li>Currently in development</li>
+                  </ul>
                 </Typography>
             </Grid>
             <Grid item xs={6}>
-                <Grid container spacing={3} direction= 'column' justifyContent='center' alignItems='center'>
-                    <Grid item xs>
-                        <MeImage />
-                    </Grid>
-                    
-                </Grid>
+                <img src={Tip} alt="Cool Stuff" width="80%" />
+
             </Grid>
         </Grid>
       </CardContent>
