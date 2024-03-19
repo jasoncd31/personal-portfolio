@@ -99,7 +99,7 @@ function App() {
           <h5>
             Website made in React and Material UI V4 
             <br />Check out the repo!<br />
-            <Button onClick={() => { handleClick("https://github.com/jasoncd31/personal-portfolio") }} color='primary' size="small" >Portfolio Repo</Button>
+            <Button onClick={() => { handleClick("https://github.com/jasoncd31/personal-portfolio") }} variant="contained" color='primary' size="small" >Portfolio Repo</Button>
           </h5>
         </footer>
       </div>
