@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { ButtonGroup, Grid } from '@material-ui/core';
-import { HotTub, GitHub, Email, LinkedIn} from '@material-ui/icons';
+import { HotTub, GitHub, Email, LinkedIn, Description} from '@material-ui/icons';
 
 const useStyles = makeStyles({
   root: {
@@ -58,6 +58,9 @@ export default function ProfileCard() {
             </Grid>
           <Grid item>
             <Button onClick={() => { handleClick("https://steamcommunity.com/id/jasoncd31/") }} variant='contained' color='primary' size="medium" startIcon={<HotTub/>} >Steam</Button>
+          </Grid>
+          <Grid item>
+            <Button onClick={() => { handleClick("https://docs.google.com/document/d/1j0TXT8i-SzIN2EUE-x27ikgPwvHCfjIUZREJxSYS4iE/edit?usp=sharing") }} variant='contained' color='primary' size="medium" startIcon={<Description/>} >Resume</Button>
           </Grid>
         </Grid>
       </CardContent>
