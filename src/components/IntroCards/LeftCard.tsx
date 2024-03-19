@@ -4,7 +4,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { Grid } from '@material-ui/core';
+import { ButtonGroup, Grid } from '@material-ui/core';
+import { HotTub, GitHub, Email, LinkedIn} from '@material-ui/icons';
 
 const useStyles = makeStyles({
   root: {
@@ -46,14 +47,17 @@ export default function ProfileCard() {
         </Typography> */}
         <br />
         <Grid container spacing={3} direction = 'column'>
-          <Grid item xs>
-              <Button onClick={() => { handleClick("https://www.github.com/jasoncd31") }} color='primary' size="small" >Github</Button>
+          <Grid item>
+            <Button onClick={() => { handleClick("https://www.github.com/jasoncd31") }} variant='contained' color='primary' size="medium" startIcon={<GitHub/>} >Github</Button>
           </Grid>
-          <Grid item xs>
-              <Button onClick={() => { handleClick("https://www.linkedin.com/in/jasoncd31") }} color='primary' size="small">LinkedIn</Button>
-          </Grid>
-          <Grid item xs>
-              <Button onClick={() => { emailClick() }} color='primary' size="small">Email Me</Button>
+          <Grid item>
+            <Button onClick={() => { handleClick("https://www.linkedin.com/in/jasoncd31") }} variant='contained' color='primary' size="medium" startIcon={<LinkedIn/>} >LinkedIn</Button>
+            </Grid>
+          <Grid item>
+            <Button onClick={() => { emailClick() }} variant='contained' color='primary' size="medium" startIcon={<Email/>} >Email Me</Button>
+            </Grid>
+          <Grid item>
+            <Button onClick={() => { handleClick("https://steamcommunity.com/id/jasoncd31/") }} variant='contained' color='primary' size="medium" startIcon={<HotTub/>} >Steam</Button>
           </Grid>
         </Grid>
       </CardContent>

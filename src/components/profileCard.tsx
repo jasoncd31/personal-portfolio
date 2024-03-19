@@ -62,7 +62,6 @@ export default function ProfileCard() {
                     <Grid item xs>
                         <MeImage />
                     </Grid>
-                    
                 </Grid>
             </Grid>
         </Grid>

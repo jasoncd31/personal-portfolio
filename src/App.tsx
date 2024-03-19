@@ -62,7 +62,7 @@ function App() {
         <body className='App-skills'>
           <h1>Skills</h1>
           <div className='padding'>
-            <Grid container spacing = {3} direction='row' justifyContent='center' alignItems='center'>
+            <Grid container spacing = {3} direction='row' justifyContent='space-between' alignItems='center'>
               <Grid item xs sm={3}>
                 <SkillCard />
               </Grid>
@@ -70,7 +70,7 @@ function App() {
                 <EngineCard />
               </Grid>
               <Grid item xs sm={3}>
-                <EngineCard />
+                <SkillCard />
               </Grid>
             </Grid>
           </div>
